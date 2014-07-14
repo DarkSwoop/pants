@@ -81,5 +81,8 @@ test:
 production:
   <<: *default
   database: pants_production
-  username: pants
+  username: <%= ENV['PANTS_DATABASE_USER'] %>
   password: <%= ENV['PANTS_DATABASE_PASSWORD'] %>
+  host:     <%= ENV['PANTS_DATABASE_HOST'] %>
+  port:     <%= ENV['PANTS_DATABASE_PORT'] %>
+  

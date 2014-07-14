@@ -82,6 +82,7 @@ group :tools do
 
   # Capistrano
   gem 'capistrano-rails'
-  gem 'capistrano-chruby'
+  # gem 'capistrano-chruby'
   gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
 end

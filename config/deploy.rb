@@ -8,14 +8,14 @@ lock '3.2.1'
 
 set :application, 'pants'
 set :stages, ["production"]
-set :repo_url, 'git@github.com:hmans/pants.git'
+set :repo_url, 'git@github.com:DarkSwoop/pants.git'
 set :deploy_via, :remote_cache
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/pants'
+set :deploy_to, '/home/benny/sites/pants.digitalbehr.de'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -30,7 +30,7 @@ set :log_level, :info
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, %w{.env.production}
+set :linked_files, %w{ .env.production }
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
